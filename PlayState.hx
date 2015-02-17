@@ -38,7 +38,8 @@ class PlayState extends FlxState
 	
 	override public function update():Void 
 	{
-		
+		_player.update();
+		_tm.update();
 		super.update();
 	}
 	

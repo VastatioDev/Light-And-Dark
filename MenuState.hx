@@ -15,6 +15,7 @@ class MenuState extends FlxState
 {
 
 	private var _titleTxt : FlxText;
+	
 	#if mobile
 	private var _startTap : FlxText;
 	#end
@@ -43,6 +44,7 @@ class MenuState extends FlxState
 		_startTap.text = "";
 		add(_startTap);
 		#end
+		
 		super.create();
 	}
 	
