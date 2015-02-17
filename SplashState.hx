@@ -13,6 +13,9 @@ import flixel.util.FlxColor;
  */
 class SplashState extends FlxState
 {
+	
+	private var _logoText : FlxText;
+	private var _logoSpr : FlxText;
 
 	override public function create():Void
 	{
