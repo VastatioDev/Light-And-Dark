@@ -21,7 +21,7 @@ class Player extends FlxSprite
 	public var _jumpKeys:Array<String>;
 	public var _leftKeys:Array<String>;
 	public var _rightKeys:Array<String>;
-
+	
 	public var pw, ph : Int;
 	
 	public function new(x:Int,y:Int) 
@@ -29,7 +29,7 @@ class Player extends FlxSprite
 		super(x, y);
 		loadGraphic("assets/images/player.png", true, pw, ph);
 		
-		//add animations later
+		//TODO add animations
 		
 		//movement and gravity and drag
 		drag.set(RUN_SPEED * 8, RUN_SPEED * 8);
@@ -101,6 +101,7 @@ class Player extends FlxSprite
 		{
 			_jumpTime = -1;
 			_timesJumped = 0;
+			
 		}
 		
 		super.update();
